@@ -1,0 +1,73 @@
+
+//-------------------------------------------------------------
+//define
+//-------------------------------------------------------------
++define+
++define+
++define+
+
+//-------------------------------------------------------------
+// DUT
+//-------------------------------------------------------------
+
+
+//-------------------------------------------------------------
+// TESTBENCH
+//-------------------------------------------------------------
++incdir+ ../env
++incdir+ ../top
++incdir+ ../env/control_agent_pkg
+//-f ../env/agent_list.sv
+
+
+// 包含路径
++incdir+../env
++incdir+../env/apb_agent
++incdir+../env/clk_agent
++incdir+../env/control_agent
++incdir+../env/pipe_agent
++incdir+../env/serdes agent
++incdir+../seq_lib
++incdir+../tests
++incdir+../top
++incdir+../top_soc
+
+// 源文件
+../env/env.sv
+../env/scoreboard.sv
+../env/sub_interface.sv
+../env/apb_agent/apb_agent.sv
+../env/clk_agent/clk_agent.sv
+../env/control_agent/control_config.sv
+../env/control_agent/control_driver.sv
+../env/control_agent/control_interface.sv
+../env/control_agent/control_monitor.sv
+../env/control_agent/control_sequencer.sv
+../env/control_agent/control_transaction.sv
+../env/control_agent/controll_agent.sv
+../env/control_agent/debug_interface.sv
+../env/pipe_agent/pipe_agent.sv
+../env/serdes agent/serdes_agent.sv
+../seq_lib/jesd204b_base_sequence_lib.sv
+../seq_lib/jesd204b_base_sequence.sv
+../tests/apb_rw_test.sv
+../tests/callbcak_demo.sv
+../tests/jesd204b_test_base.sv
+../tests/jesd204b_testcase_lib.sv
+../tests/nearloopback_test.sv
+../tests/sanity_test.sv
+../top/top_connection.sv
+../top/top_param.sv
+../top/top.sv
+../top_soc/top_soc.sv
+
+//-------------------------------------------------------------
+// TOP
+//-------------------------------------------------------------
+-top top
+ 
+//-------------------------------------------------------------
+// RTL FILELISTS
+//-------------------------------------------------------------
+
+
